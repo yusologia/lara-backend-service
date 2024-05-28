@@ -16,12 +16,12 @@ return Application::configure(basePath: dirname(__DIR__))
 
         Route::prefix(config('core.prefix.web') . "/$version/$service")
             ->middleware(['web'])
-            ->namespace("$namespace\\" . config('core.namespace.web') . "\\$version")
+            ->namespace("$namespace\\" . config('core.namespace.web'))
             ->group(base_path('routes/web.php'));
 
         Route::prefix(config('core.prefix.mobile') . "/$version/$service")
             ->middleware(['web'])
-            ->namespace("$namespace\\" . config('core.namespace.mobile') . "\\$version")
+            ->namespace("$namespace\\" . config('core.namespace.mobile'))
             ->group(base_path('routes/mobile.php'));
     })
     ->withMiddleware(function (Middleware $middleware) {

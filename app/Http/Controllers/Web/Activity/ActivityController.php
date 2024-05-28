@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Mobile\v1\Activity;
+namespace App\Http\Controllers\Web\Activity;
 
 use App\Http\Controllers\Controller;
-use App\Models\v1\Activity\Activity;
+use App\Models\Activity\Activity;
 use Illuminate\Http\Request;
 
 class ActivityController extends Controller
