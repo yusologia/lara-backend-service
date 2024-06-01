@@ -5677,16 +5677,16 @@
         },
         {
             "name": "yusologia/lara-core",
-            "version": "v1.0.6",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yusologia/lara-core.git",
-                "reference": "c69dd61152bac688f8e1278ad17b2939daa92ea4"
+                "reference": "00d362de3cd459470a4ff46a53bbf57f74335dd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yusologia/lara-core/zipball/c69dd61152bac688f8e1278ad17b2939daa92ea4",
-                "reference": "c69dd61152bac688f8e1278ad17b2939daa92ea4",
+                "url": "https://api.github.com/repos/yusologia/lara-core/zipball/00d362de3cd459470a4ff46a53bbf57f74335dd2",
+                "reference": "00d362de3cd459470a4ff46a53bbf57f74335dd2",
                 "shasum": ""
             },
             "require": {
@@ -5724,9 +5724,9 @@
             "description": "Yusologia Laravel Core Configuration",
             "support": {
                 "issues": "https://github.com/yusologia/lara-core/issues",
-                "source": "https://github.com/yusologia/lara-core/tree/v1.0.6"
+                "source": "https://github.com/yusologia/lara-core/tree/v1.0.8"
             },
-            "time": "2024-05-23T14:22:15+00:00"
+            "time": "2024-06-01T08:01:26+00:00"
         }
     ],
     "packages-dev": [
