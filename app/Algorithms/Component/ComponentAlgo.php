@@ -14,7 +14,8 @@ class ComponentAlgo
      * @param $model
      * @param Request $request
      *
-     * @return JsonResponse|mixed
+     * @return JsonResponse|mixed|void
+     * @throws \Logia\Core\Exception\ErrorException
      */
     public function createBy($model, Request $request)
     {
@@ -46,8 +47,8 @@ class ComponentAlgo
 
             return success($component);
 
-        } catch (\Exception $exception) {
-            exception($exception);
+        } catch (\Error $error) {
+            exception($error);
         }
     }
 
@@ -55,7 +56,8 @@ class ComponentAlgo
      * @param Model $model
      * @param Request $request
      *
-     * @return mixed|JsonResponse
+     * @return JsonResponse|mixed|void
+     * @throws \Logia\Core\Exception\ErrorException
      */
     public function update(Model $model, Request $request)
     {
@@ -74,15 +76,16 @@ class ComponentAlgo
 
             return success($model->fresh());
 
-        } catch (\Exception $exception) {
-            exception($exception);
+        } catch (\Error $error) {
+            exception($error);
         }
     }
 
     /**
      * @param Model $model
      *
-     * @return mixed|JsonResponse
+     * @return JsonResponse|mixed|void
+     * @throws \Logia\Core\Exception\ErrorException
      */
     public function delete(Model $model)
     {
@@ -101,8 +104,8 @@ class ComponentAlgo
 
             return success();
 
-        } catch (\Exception $exception) {
-            exception($exception);
+        } catch (\Error $error) {
+            exception($error);
         }
     }
 

@@ -9,6 +9,12 @@ class Controller extends BaseController
 {
     public function testing(Request $request)
     {
-        return success();
+        try {
+
+            return success();
+
+        } catch (\Error $error) {
+            exception($error);
+        }
     }
 }
